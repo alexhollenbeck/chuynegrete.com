@@ -2,27 +2,35 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: base
+layout: base.html
+image: "/assets/Chuy\ Negrete\ with\ guitar.jpeg"
 ---
 
-<div class="container" style="margin-top: 80px;">
-    <div class="main-photo"></div>
-    <h1>Chuy Negrete</h1>
-    <h2>Folk singer of the Chicano Movement</h2>
-    <p>Chicago, May 29, 2021 – Jesús “Chuy” Negrete, 72, Chicago-based folksinger and lecturer who rose to nationwide prominence in the 1970s Chicano Movement and was hailed by Studs Terkel as “the Chicano Woody Guthrie,” died Thursday, May 27, at Glenbrook Hospital in Glenview. The cause was complications of congestive heart failure.</p>
-    <p>For decades, Negrete entertained and inspired successive generations of Latino and other youth as he performed and taught in colleges and universities across the nation. He presented concerts, lectures and workshops to audiences of all ages and backgrounds, in venues ranging from public schools and libraries to union rallies and civic festivals, from prisons to senior centers. </p>
-    <p>With his guitar and harmonica, Negrete wove together songs, poetry and oral histories in English and Spanish to retell Mexican and Mexican-American history from pre-Columbian times to the present. He specialized in the creation, interpretation and study of Mexican and Mexican-American folk music—particularly the corrido form of running-verse ballads—revealing the cultures and experiences of Latinos, immigrants and laborers through music.</p>
-    <p>Negrete, born in San Luís Potosí, Mexico, was ferried across the Rio Grande with his family as a 1-year-old and spent his early years in Texas, where his parents were migrant farmworkers. In later life, he was closely aligned with the farmworker movement, performing for César Chavez’s United Farm Workers and Baldemar Velasquez’s Farm Labor Organizing Committee. </p>
-    <p>From the age of 7, Negrete was reared in the steel-mill culture of South Chicago. As a young adult, he worked with his father at U.S. Steel.</p>
-    <p>After meeting and being inspired by playwright and director Luis Valdez, Negrete began his performance career leading a “street theater” troupe, Teatro del Barrio. He recruited aspiring Chicano actors, including his younger sisters Juanita, Santa and Rosa, to travel the country presenting satirical folkloric shows at schools, colleges and other venues. He and Rosa later performed for a time as a music-and-multimedia duo, Flor y Canto.</p>
-    <p>Negrete made numerous radio and television appearances and was associated with several films. For more than a decade, he hosted “Radio Rebelde,” a weekly bilingual talk-and-music program addressing issues faced by immigrant workers, currently broadcasting on Loyola University's WLUW, 88.7 FM. </p>
-    <p>Holding degrees from the University of Illinois at Chicago and Chicago State University, Negrete was an expert in multicultural education, educational anthropology and ethnomusicology who taught in Chicago Public Schools and later in colleges and universities including the University of Illinois at Chicago, Robert Morris University, Roosevelt University and Indiana University Northwest. </p>
-    <p>Negrete is survived by his wife, Rita Rousseau; sons Joaquín and Lucas Negrete-Rousseau, both of Chicago; and four sisters: Martha N. Bustos of Dolton, Juanita Negrete-Phillips and Santa Negrete-Perez, both of South Chicago, and Rosa Negrete Livieri of Skokie. </p>
-    <p>A memorial service is planned later this summer.</p>
-</div>
-
-
-<style>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>{{ page.title }}</title>
+    {% seo %}
+  </head>
+  <body>
+    <div class="container" style="margin-top: 80px;">
+        <div class="main-photo"></div>
+        <h1>Chuy Negrete</h1>
+        <h2>Folk singer of the Chicano Movement</h2>
+        <p>Chicago, May 29, 2021 – Jesús “Chuy” Negrete, 72, Chicago-based folksinger and lecturer who rose to nationwide prominence in the 1970s Chicano Movement and was hailed by Studs Terkel as “the Chicano Woody Guthrie,” died Thursday, May 27, at Glenbrook Hospital in Glenview. The cause was complications of congestive heart failure.</p>
+        <p>For decades, Negrete entertained and inspired successive generations of Latino and other youth as he performed and taught in colleges and universities across the nation. He presented concerts, lectures and workshops to audiences of all ages and backgrounds, in venues ranging from public schools and libraries to union rallies and civic festivals, from prisons to senior centers. </p>
+        <p>With his guitar and harmonica, Negrete wove together songs, poetry and oral histories in English and Spanish to retell Mexican and Mexican-American history from pre-Columbian times to the present. He specialized in the creation, interpretation and study of Mexican and Mexican-American folk music—particularly the corrido form of running-verse ballads—revealing the cultures and experiences of Latinos, immigrants and laborers through music.</p>
+        <p>Negrete, born in San Luís Potosí, Mexico, was ferried across the Rio Grande with his family as a 1-year-old and spent his early years in Texas, where his parents were migrant farmworkers. In later life, he was closely aligned with the farmworker movement, performing for César Chavez’s United Farm Workers and Baldemar Velasquez’s Farm Labor Organizing Committee. </p>
+        <p>From the age of 7, Negrete was reared in the steel-mill culture of South Chicago. As a young adult, he worked with his father at U.S. Steel.</p>
+        <p>After meeting and being inspired by playwright and director Luis Valdez, Negrete began his performance career leading a “street theater” troupe, Teatro del Barrio. He recruited aspiring Chicano actors, including his younger sisters Juanita, Santa and Rosa, to travel the country presenting satirical folkloric shows at schools, colleges and other venues. He and Rosa later performed for a time as a music-and-multimedia duo, Flor y Canto.</p>
+        <p>Negrete made numerous radio and television appearances and was associated with several films. For more than a decade, he hosted “Radio Rebelde,” a weekly bilingual talk-and-music program addressing issues faced by immigrant workers, currently broadcasting on Loyola University's WLUW, 88.7 FM. </p>
+        <p>Holding degrees from the University of Illinois at Chicago and Chicago State University, Negrete was an expert in multicultural education, educational anthropology and ethnomusicology who taught in Chicago Public Schools and later in colleges and universities including the University of Illinois at Chicago, Robert Morris University, Roosevelt University and Indiana University Northwest. </p>
+        <p>Negrete is survived by his wife, Rita Rousseau; sons Joaquín and Lucas Negrete-Rousseau, both of Chicago; and four sisters: Martha N. Bustos of Dolton, Juanita Negrete-Phillips and Santa Negrete-Perez, both of South Chicago, and Rosa Negrete Livieri of Skokie. </p>
+        <p>A memorial service is planned later this summer.</p>
+    </div>
+  </body>
+  <style>
     html {
         font-family: 'Helvetica';
         background-color: #F0F4F9;
@@ -33,6 +41,7 @@ layout: base
     }
     .container {
         max-width: 1080px;
+        padding: 16px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -50,6 +59,14 @@ layout: base
     }
     p {
         max-width: 600px;
-        margin: 0 auto 16px auto;
+        margin: 0 auto 24px auto;
+        font-size: 16px;
     }
+
+    
 </style>
+</html>
+
+
+
+
