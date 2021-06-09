@@ -44,30 +44,9 @@ Latino and other youth for decades."
           Guthrie,” died Thursday, May 27, at Glenbrook Hospital in Glenview. The
           cause was complications of congestive heart failure.
         </p>
-        <p class="paragraph">
-          For decades, Negrete entertained and inspired successive generations of
-          Latino and other youth as he performed and taught in colleges and
-          universities across the nation. He presented concerts, lectures and
-          workshops to audiences of all ages and backgrounds, in venues ranging
-          from public schools and libraries to union rallies and civic festivals,
-          from prisons to senior centers.
-        </p>
-        <p class="paragraph">
-          With his guitar and harmonica, Negrete wove together songs, poetry and
-          oral histories in English and Spanish to retell Mexican and
-          Mexican-American history from pre-Columbian times to the present. He
-          specialized in the creation, interpretation and study of Mexican and
-          Mexican-American folk music—particularly the corrido form of
-          running-verse ballads—revealing the cultures and experiences of Latinos,
-          immigrants and laborers through music.
-        </p>
-        <div class="press-section">
-          <img
-            src="/assets/Chuy Negrete DSC_9979.jpeg"
-            alt="Chuy Negrete"
-          />
+        <div class="press-section inline-border-section">
+          <h3 class="label">press</h3>
           <div class="press-articles">
-            <h3 class="label">press</h3>
             <a
               href="https://chicago.suntimes.com/2021/6/4/22465410/jesus-chuy-negrete-folklorist-singer-chicano-movement-corridos-teatro-campesino-teatro-del-barrio"
               target="_blank"
@@ -89,6 +68,31 @@ Latino and other youth for decades."
               <h4 class="label" style="font-size: 10px;">La Raza</h4>
             </a>
           </div>
+        </div>
+        <p class="paragraph">
+          For decades, Negrete entertained and inspired successive generations of
+          Latino and other youth as he performed and taught in colleges and
+          universities across the nation. He presented concerts, lectures and
+          workshops to audiences of all ages and backgrounds, in venues ranging
+          from public schools and libraries to union rallies and civic festivals,
+          from prisons to senior centers.
+        </p>
+        
+        <p class="paragraph">
+          With his guitar and harmonica, Negrete wove together songs, poetry and
+          oral histories in English and Spanish to retell Mexican and
+          Mexican-American history from pre-Columbian times to the present. He
+          specialized in the creation, interpretation and study of Mexican and
+          Mexican-American folk music—particularly the corrido form of
+          running-verse ballads—revealing the cultures and experiences of Latinos,
+          immigrants and laborers through music.
+        </p>
+        <div style="margin-top: 48px;" class="inline-border-section">
+          <img
+            src="/assets/Chuy Negrete DSC_9979.jpeg"
+            alt="Chuy Negrete"
+            class="inline-image"
+          />
         </div>
         <p style="margin-top: 64px" class="paragraph">
           Negrete, born in San Luís Potosí, Mexico, was ferried across the Rio
@@ -372,36 +376,33 @@ Latino and other youth for decades."
     .bold {
       font-weight: 600;
     }
-    .press-section {
+    .inline-border-section {
       max-width: 568px;
-      margin: 64px auto 0;
       border-top: 1px solid #afbed0;
       border-bottom: 1px solid #afbed0;
-      padding: 64px 0;
-      display: flex;
+      padding: 48px 0;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .press-articles {
-      max-width: 264px;
-      margin-left: 40px;
+    .press-section {
+      margin: 40px auto 48px;
     }
-    .press-articles .label {
+    .press-section .label {
       text-align: left;
       margin-top: 0;
     }
+    .press-articles {
+      display: flex;
+      margin-top: 16px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     .press-section img {
-      max-width: 264px;
+      max-width: 272px;
     }
     .article {
       text-align: left;
       display: block;
-    }
-    .article:nth-of-type(1) {
-      margin-top: 16px;
-    }
-    .article:nth-of-type(2) {
-      margin-top: 24px;
-      border-top: 1px solid #afbed0;
-      padding-top: 24px;
     }
     .article * {
       transition: color 0.3s;
@@ -414,6 +415,11 @@ Latino and other youth for decades."
     }
     .article:hover .paragraph, .article:hover .label {
       color: #794CFF;
+    }
+    .inline-image {
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
     }
     .footer {
       display: flex;
@@ -445,6 +451,15 @@ Latino and other youth for decades."
       .headline h1, .headline h2, .headline h3 {
         text-align: left;
       }
+      .press-articles {
+        flex-direction: row;
+      }
+      .article {
+        max-width: 268px;
+      }
+      .article:nth-of-type(2) {
+        margin-left: 32px;
+      }
     }
     @media (max-width: 511px) {
       .header {
@@ -459,9 +474,8 @@ Latino and other youth for decades."
       .press-section img {
         margin: auto;
       }
-      .press-section .press-articles {
-        max-width: 400px;
-        margin: 40px auto 0;
+      .article:nth-of-type(2) {
+        margin-top: 24px;
       }
     }
   </style>
