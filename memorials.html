@@ -6,6 +6,8 @@ layout: base.html
 image: "https://chuynegrete.com/assets/og-image.jpeg"
 title: "Chuy Negrete Memorial and Cultural Celebration"
 description: "The Negrete family invites you to a cultural celebration of Chuy Negrete."
+redirect_from:
+ - /memorial/
 ---
 
 <html>
@@ -24,35 +26,73 @@ description: "The Negrete family invites you to a cultural celebration of Chuy N
   <body>
     <div class="container">
       <div class="content">
-					<img
+        <a href="/">
+          <img
 						class="memorial-header-image"
             src="/assets/cempasuchil.png"
             alt="Cempasuchil"
           />
-          <div class="headline">
-            <h3 class="label label-large">Cultural Celebration of</h3>
-            <h1>Chuy Negrete</h1>
-            <h2 style="margin-top: 16px">1948 - 2021</h2>
+        </a>
+					<div class="headline">
+            <a href="/"><h3 class="label label-large">Chuy Negrete</h3></a>
+            <h1 style="margin-bottom: 4rem;">Celebrations and memorials</h1>
           </div>
-					<p class="paragraph memorial-time bold">1:00 pm Sunday September 12, 2021</p>
-					<p class="paragraph memorial-address">Chicago, IL</p>
+          <img src="/assets/ofrenda.jpeg" alt="Ofrenda for Chuy Negrete" class="event-image" id="09-12-21" />
+          <div class="headline">
+            <h2 style="margin-top: 2rem;">Cultural Celebration of Chuy Negrete</h2>
+          </div>
+					<p class="paragraph memorial-time bold">Sunday September 12, 2021<br/>National Museum of Mexican Art<br />Chicago, IL</p>
+          <div style="margin-top: 2rem; text-align: center;">
+            <h3 class="label label-large" style="max-width: none;">Full video</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/OdHAUsk95Fg  "
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="margin: 2rem auto; padding: 0px; display: block; max-width: 100%;">
+            </iframe>
+          </div>
+          <div style="margin-top: 4rem; text-align: center;">
+            <h3 class="label label-large" style="max-width: none;">Remote testimonials</h3>
+            
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dJIC1A0JbOU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="margin: 2rem auto; padding: 0px; display: block; max-width: 100%;">
+            </iframe>
+            <p class="paragraph">Baldemar Velasquez, President, Farm Labor Organizing Committee</p>
+            <p class="paragraph">Lorenzo Cano, Mexican American Studies, University of Houston</p>
+            <p class="paragraph">Edward James Olmos, actor/director/producer/activist</p>
+          </div>
+          <hr style="margin: 4rem 0;"/>
+          <div class="headline">
+            <h2 style="margin-top: 16px" id="07-03-21">Remembering Chuy Negrete</h2>
+            <h5>Private memorial</h5>
+          </div>
+          <p class="paragraph memorial-time bold">Saturday, July 3, 2021<br/>Unitarian Church of Evanston<br />Evanston, IL</p>
+          <div style="margin-top: 2rem; text-align: center;">
+            <h3 class="label label-large" style="max-width: none;">Full video</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AjCxg3tTEjY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="margin: 2rem auto; padding: 0px; display: block; max-width: 100%;">
+            </iframe>
+          </div>
         </div>
-        <div style="margin-top: 2rem; text-align: center;">
-          <h3 class="label label-large" style="max-width: none;">Video testimonials</h3>
-          <p class="paragraph">Baldemar Velasquez, President, Farm Labor Organizing Committee</p>
-          <p class="paragraph">Lorenzo Cano, Mexican American Studies, University of Houston</p>
-          <p class="paragraph">Edward James Olmos, actor/director/producer/activist</p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/dJIC1A0JbOU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            style="margin: 2rem auto; padding: 0px; display: block; max-width: 100%;">
-          </iframe>
-        </div>
+        
     </div>
   </body>
   <style>
@@ -235,7 +275,7 @@ description: "The Negrete family invites you to a cultural celebration of Chuy N
       margin-right: auto;
     }
     .content {
-      max-width: 400px;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -340,6 +380,12 @@ description: "The Negrete family invites you to a cultural celebration of Chuy N
     .footer-item {
       height: 100px;
       width: 100px;
+    }
+    .event-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
     }
     @media (min-width: 600px) {
       .container {
